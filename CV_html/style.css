@@ -1,0 +1,768 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap');
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 'Poppins' , sans-serif;
+    font: 'Montserrat', sans-serif;
+}
+   
+html
+{ 
+        scroll-behavior: smooth;
+        font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    
+    font-family: 'Poppins', sans-serif; 
+}
+
+body 
+{
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color:#efefef;
+}
+
+/**********header************/
+.start
+{
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url(IMG/fondo_web.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: #efefef;
+}
+
+.start .starting_content
+{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.start .starting_content .info
+{
+    padding-bottom: 130px;
+}
+
+.start .starting_content .info h1
+{
+    font-size: 6rem;
+    letter-spacing: 5px;
+}
+
+.start .starting_content .info h2
+{
+    font-weight: normal;
+    font-size: 40px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+}
+
+.start .starting_content .info .SM
+{
+    margin: 20px 0;
+}
+
+.start .starting_content .info .SM a
+{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #efefef;
+    color: #1f1f1f;
+    border: 1px solid #1f1f1f;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 5px;
+    transition: .3s;
+}
+
+.start .starting_content .photo
+{
+    position: relative;
+}
+
+.start .starting_content .photo img
+{
+    max-width: 300px;
+    border-radius: 50%;
+    background:linear-gradient(rgb(29, 28, 28), #9e9a9d);
+    border: 5px solid #1f1f1f;
+    position: relative;
+    left: 16%;
+    top: -80px;
+    transform: translateX(-50%);
+  
+}
+
+.start .starting_content .info .SM a:hover
+{
+    color: #1f1f1f;
+    background-color: #efefef;
+    box-shadow: 0 0 20px #ffffff;
+}
+/***************************************/
+
+/************ nav bar ****************/
+.sidebar
+{   
+    position:fixed;
+    top: 0px;
+    width: 60px;
+    height: 180vh;
+    background: #1f1f1f;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+.sidebar:hover
+{
+    width: 300px;
+    box-shadow: 9px 0px 0.4rem rgba(0, 0, 0, 0.3) ;
+}
+
+.sidebar ul
+{
+    position: relative;
+    height: 100vh;
+}
+
+.sidebar ul li
+{
+    list-style: none;
+}
+
+
+.sidebar ul li:hover
+{
+    background: #595a5a;
+}
+
+.sidebar ul li a
+{
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.sidebar ul li a .icon
+{
+    margin-top: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60px;
+    height: 30px;
+    font-size: 1.5em;
+    color: #efefef;
+}
+
+.sidebar ul li a .text
+{
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: #efefef;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.sidebar ul li.toplogo
+{
+    margin-bottom: 50px;
+}
+
+.sidebar ul li.toplogo:hover
+{
+    background-color: #1f1f1f;
+}
+
+.sidebar ul li.toplogo .icon
+{
+    font-size: 2em;
+}
+
+.sidebar ul li.toplogo .text
+{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+/***************************************/
+
+/************ about me ***********/
+.personal
+{
+    background-color: #e6e6e6;
+    padding: 10px 0 100px 0;
+    text-align: center;
+}
+
+.personal .content-section 
+{
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.personal .content-section h3
+{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.personal .content-section h2
+{
+    margin: 20px;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.personal .content-section .especial
+{
+    color: #1f1f1f;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.personal .content-section p
+{
+    max-width: 700px;
+    margin: auto;
+    color: #1f1f1f;
+}
+
+.personal .content-section p.summary
+{
+    max-width: 700px;
+    margin: auto;
+    margin-top: 23px;
+    color: #1f1f1f;
+}
+
+.personal .content-section .row
+{
+    padding: 0px;
+    display: flex;
+    margin: 40px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.personal .content-section .row .column
+{
+    width: 30%;
+}
+
+.personal .content-section .row .column .icon
+{
+    color: #efefef;
+    background-color: #1f1f1f;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #1f1f1f;
+    line-height: 40px;
+    border-radius: 50%;
+} 
+
+.personal .content-section .row .column span
+{
+    display: block;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+
+/****************************************/
+
+
+
+/************** work exp *********************/
+
+
+h1.header_job
+{   
+    text-align: center;
+    font-size: 50px;
+    color: #efefef;
+    background-color: #1f1f1f;
+    text-decoration: underline;
+    margin: 0 auto;
+    border: #1f1f1f;
+}
+
+.container_WorkExp
+{   
+    padding: 80px 0 100px 0;
+    background: url(IMG/Despacho.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    margin: 0 auto;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container_WorkExp .Wexp h1
+{   
+    position: relative;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.container_WorkExp .Wexp_articles .section article.Wexp_articles a.info
+{
+    text-decoration:underline ;
+}
+section article.Job
+{
+    text-align: center;
+    color: #efefef;
+    transition: box-shadow 0.3s ease;
+    background-color:#a1a19d;
+    margin: 2rem;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    cursor: pointer;
+}
+
+
+section article.Job img
+{
+    margin: 9px;
+}  
+
+section article.Job:hover
+{
+    box-shadow: 0 0.5rem 0.8rem rgb(168, 168, 168) ;
+}
+
+section article h2, section article a
+{
+    color: #efefef;
+    margin: 1rem;
+}
+
+section article h2, section article a:hover
+{
+    color: #1f1f1f;
+    transition: 0.4s;
+}
+
+
+    /*Jobs Explanation */
+
+section.Work_info
+{
+    justify-content: center;
+    text-align: center;
+    margin: 5rem;
+    margin-top: 0px;
+}
+
+article.Project_1
+{
+    margin-top: 30px;
+}
+
+article.Project h2
+{
+    text-align: center;
+    color: #efefef;
+    background-color: #1f1f1f;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+article.Project_1 h2
+{
+    text-align: center;
+    color: #efefef;
+    background-color: #1f1f1f;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+article.Project p
+{
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 25px;
+}
+
+article.Project_1 p
+{
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 25px;
+}
+
+
+
+/**********************************************/
+
+
+
+/*********** Skills***********/
+
+section.Skills
+{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-image: url(IMG/code_background\ .jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header_skills h1
+{
+    text-align: center;
+    font-size: 50px;
+    color: #efefef;
+    background-color: #1f1f1f;
+    text-decoration: underline;
+    border: #1f1f1f;
+}
+
+section.Skills .skills_pack
+{
+    padding: 80px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.Skills .Row_2
+{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 60px;
+    margin: 10px;
+}
+
+section.Skills .Row_2 .Box
+{
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;    
+    max-width: 400px;
+    border-style:solid ;
+    background-color: #efefef;
+}
+
+#react:hover
+{
+    border-color: #1f1f1f;
+    color: #33d6f3;
+    background-color: rgb(17, 21, 22);
+    transition: 0.7s; 
+}
+
+#html:hover
+{
+    border-color: #1f1f1f;
+    color: #ffffff;
+    background-color: rgb(206, 106, 13);
+    transition: 0.7s;
+}
+
+#css:hover
+{
+    border-color: #1f1f1f;
+    color: #ffffff;
+    background-color: rgb(24, 75, 214);
+    transition: 0.7s;
+}
+
+#java:hover
+{
+    border-color: #1f1f1f;
+    color: #efefef;
+    background-color: rgb(212, 191, 0);
+    transition: 0.7s;
+}
+
+#python:hover
+{
+    border-color: #1f1f1f;
+    color: #9b6c08;
+    background-color: rgb(21, 54, 145);
+    transition: 0.7s;
+}
+
+#c:hover
+{
+    border-color: #1f1f1f;
+    color: #e6e6e6;
+    background-color: rgb(91, 150, 218);
+    transition: 0.7s;
+}
+
+section.Skills .Row_2 .Box .Info
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;  
+    padding: 10px;  
+    width: 350px;
+}
+
+section.Skills i
+{
+    font-size: 100px;
+}
+/*******************************************/
+
+/**********Interesting facts***************/
+
+.Facts
+{
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #efefef;
+}
+
+.slide-container
+{
+    max-width: 1120px;
+    width: 100%;
+    background-color: #6d6d6d;
+    padding: 40px 0;
+}
+
+.slide-content
+{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.card
+{
+    width: 320px;
+    border-radius: 25px;
+    background-color: #efefef;
+}
+
+.image-content,
+.card-content
+{
+   display: flex; 
+   flex-direction: column;
+   align-items: center;
+   padding: 10px 14px;
+}
+
+.image-content
+{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+
+.overlay
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after
+{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #000;
+}
+
+.overlay::after
+{
+    border-radius: 0 25px 0 0;
+    background-color: #efefef;
+}
+
+
+.card-image
+{
+position: relative;
+height: 150px;
+width: 150px;
+border-radius: 50%;
+background-color: #efefef;
+padding: 3px;
+}
+
+.card-image .card-img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #000
+}
+
+.title-card
+{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.description
+{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+.button
+{
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #000;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover
+{
+    background: #707172;
+}
+
+.swiper-navBtn
+{
+    color: #efefef;
+    transition: color 0.3 ease;
+}
+
+.swiper-navBtn:hover
+{
+    color: #979595;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after
+{
+    font-size: 40px;
+}
+
+.swiper-button-next
+{
+    right: 0;
+}
+
+.swiper-button-prev
+{
+    left: 0;
+}
+
+.swiper-pagination-bullet
+{
+    background-color: #979595;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active
+{
+    background-color: #efefef;
+}
+
+@media screen and (max-width: 768px)
+{
+    .slide-content{
+        margin: 0 10px;
+    }
+    .swiper-navBtn{
+        display: none;
+    }
+}
+
+/* Contact section */
+
+.Contact
+{
+ background-color: #1f1f1f;
+ padding: 20px 0 40px 0;
+ color: #e6e6e6;
+ text-align:center;
+}
+
+.Contact .content-section
+{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.Contact .content-section h3
+{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.Contact .content-section .row_c
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Contact .content-section .row_c .col_c
+{
+    margin-top: 25px;
+}
+
+.Contact .content-section .row_c .col_c h2
+{
+    color: #e6e6e6;
+}
+
+.Contact .content-section .row_c .col_c a
+{
+    color: #e6e6e6;
+}
+
+.Contact .content-section .row_c .col_c a:hover
+{
+    color: #69b5db;
+    transition: .6s;
+}
